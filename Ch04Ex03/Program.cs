@@ -29,10 +29,10 @@ namespace Ch04Ex03
                 case sillyName:
                     WriteLine("That's a very silly name.");
                     break;
-            }
-
-            // Greet
-            WriteLine($"Hello {name}!");
+                default:
+                    WriteLine($"Hello {name}!");
+                    break;
+            }           
         }
     }
 }
