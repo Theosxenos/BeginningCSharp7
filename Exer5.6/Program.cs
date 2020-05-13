@@ -25,6 +25,13 @@ namespace Exer5._6
                 Console.Write($"\"{userInputSplit[i]}\" ");
             }
             WriteLine();
+            
+            /*
+            WriteLine("Enter a string:");
+            string myString = ReadLine();
+            myString = "\"" + myString.Replace(" ", "\" \"") + "\"";
+            WriteLine($"Added double quotes around words: {myString}");
+            */
         }
     }
 }
