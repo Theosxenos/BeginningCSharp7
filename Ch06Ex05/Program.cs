@@ -28,9 +28,11 @@ namespace Ch06Ex05
             WriteLine("Enter M to multiply or D to divide:");
             input = ReadLine();
             if (input == "M")
-                process = new ProcessDelegate(Multiply);
+                //process = new ProcessDelegate(Multiply);
+                process = Multiply;
             else
-                process = new ProcessDelegate(Divide);
+                //process = new ProcessDelegate(Divide);
+                process = Divide;
             
             // Out put the result
             WriteLine($"Result: {process(param1, param2)}");
