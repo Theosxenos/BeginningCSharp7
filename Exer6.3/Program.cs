@@ -12,16 +12,17 @@ namespace Exer6._3
         // Declare delegate
         delegate string ReadLineDelegate();
         // Declare fuction that calls and returns Console.Readline
-        static string MyReadLine() => ReadLine();
+        //static string MyReadLine() => ReadLine();
 
         static void Main(string[] args)
         {
             // Assign function to delegate
-            ReadLineDelegate readline = new ReadLineDelegate(MyReadLine);
+            //ReadLineDelegate readline = new ReadLineDelegate(MyReadLine);
+            ReadLineDelegate readLine = new ReadLineDelegate(ReadLine);
             
             // Ask for input and call delegate
             WriteLine("Write something:");
-            string input = readline();
+            string input = readLine();
 
             // Show the result
             WriteLine($"You wrote: \"{input}\"");
