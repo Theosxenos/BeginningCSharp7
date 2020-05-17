@@ -12,10 +12,10 @@ namespace Exer6._5
 
             public double TotalCost() => unitCount * unitCost;
 
-            public string OrderInformation()
-            {
-                return $"Order Information: {unitCount} {itemName} items at ${unitCost} each, total cost ${TotalCost()}";
-            }
+            public string OrderInformation() => $"Order Information: {unitCount} {itemName} items at ${unitCost} each, total cost ${TotalCost()}";
+            //{
+            //    return $"Order Information: {unitCount} {itemName} items at ${unitCost} each, total cost ${TotalCost()}";
+            //}
         }
 
         static void Main(string[] args)
