@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Exer6.2": {
+      "commandName": "Project",
+      "commandLineArgs": "\"this is a string\" 12"
+    }
+  }
+}
