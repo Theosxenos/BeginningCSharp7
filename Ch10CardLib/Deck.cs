@@ -11,24 +11,24 @@ namespace Ch10CardLib
         {
             cards = new Card[52];
 
-            /// Book solution
-            //for (int suitVal = 0; suitVal < 4; suitVal++)
-            //{
-            //    for (int rankVal = 1; rankVal < 14; rankVal++)
-            //    {
-            //        cards[suitVal * 13 + rankVal - 1] = new Card((Suit)suitVal, (Rank)rankVal);
-            //    }
-            //}
-
-            // Loop through all the Suit and Rank enum values
-            foreach (Suit suit in Enum.GetValues(typeof(Suit)))
+            // Book solution
+            for (int suitVal = 0; suitVal < 4; suitVal++)
             {
-                foreach (Rank rank in Enum.GetValues(typeof(Rank)))
+                for (int rankVal = 1; rankVal < 14; rankVal++)
                 {
-                    // The length of the array should give the last non used index to make a new card in
-                    cards[cards.Length] = new Card(suit, rank);
+                    cards[suitVal * 13 + rankVal - 1] = new Card((Suit)suitVal, (Rank)rankVal);
                 }
             }
+
+            //// Loop through all the Suit and Rank enum values
+            //foreach (Suit suit in Enum.GetValues(typeof(Suit)))
+            //{
+            //    foreach (Rank rank in Enum.GetValues(typeof(Rank)))
+            //    {
+            //        // The length of the array should give the last non used index to make a new card in
+            //        cards[cards.Length] = new Card(suit, rank);
+            //    }
+            //}
         }
 
         public Card GetCard(int cardNum)
