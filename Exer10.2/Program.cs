@@ -17,13 +17,15 @@ namespace Exer10._2
         static void Main(string[] args)
         {
             MyCopyableClass myCopyableClass = new MyCopyableClass();
-
             myCopyableClass.SimpleProperty = "NotDefault";
 
             var myCopyCopy = myCopyableClass.GetCopy();
+            myCopyCopy.SimpleProperty = "NotNotDefault";
 
             Console.WriteLine(myCopyCopy.GetType());
             Console.WriteLine(myCopyCopy.SimpleProperty);
+            Console.WriteLine(myCopyableClass.SimpleProperty);
+
         }
     }
 }
