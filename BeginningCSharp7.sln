@@ -83,7 +83,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exer9.4 Vehicles", "Exer9.4
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exer9.5 Traffc", "Exer9.5 Traffc\Exer9.5 Traffc.csproj", "{A38BAC39-C0A6-46FB-AFFF-5F3752D7E7EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch10Ex01", "Ch10Ex01\Ch10Ex01.csproj", "{B6BD4432-D613-42F1-8B68-190818A27ABC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch10Ex01", "Ch10Ex01\Ch10Ex01.csproj", "{B6BD4432-D613-42F1-8B68-190818A27ABC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch10Ex02", "Ch10Ex02\Ch10Ex02.csproj", "{2EB9515A-B06F-4FC3-8E1B-1919E750B7BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -255,6 +257,10 @@ Global
 		{B6BD4432-D613-42F1-8B68-190818A27ABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6BD4432-D613-42F1-8B68-190818A27ABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6BD4432-D613-42F1-8B68-190818A27ABC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EB9515A-B06F-4FC3-8E1B-1919E750B7BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EB9515A-B06F-4FC3-8E1B-1919E750B7BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EB9515A-B06F-4FC3-8E1B-1919E750B7BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EB9515A-B06F-4FC3-8E1B-1919E750B7BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
