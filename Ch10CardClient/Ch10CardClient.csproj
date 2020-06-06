@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Ch10CardLib\Ch10CardLib.csproj" />
+    <ProjectReference Include="..\Ch11CardLib\Ch11CardLib.csproj" />
   </ItemGroup>
 
 </Project>
