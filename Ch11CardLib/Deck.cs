@@ -2,7 +2,7 @@
 
 namespace Ch11CardLib
 {
-    public class Deck
+    public class Deck : ICloneable
     {
         private Cards cards = new Cards();
 
@@ -26,6 +26,15 @@ namespace Ch11CardLib
                     cards.Add(new Card(suit, rank));
                 }
             }
+        }
+
+        private Deck(Cards newCards) => cards = newCards;
+
+        public object Clone()
+        {
+            Deck newDeck = new Deck(cards.Clone() as Cards);
+
+            return newDeck;
         }
 
         public Card GetCard(int cardNum)

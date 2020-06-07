@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Ch11CardLib
 {
-    public class Card
+    public class Card : ICloneable
     {
         public Rank rank;
         public Suit suit;
@@ -18,5 +16,10 @@ namespace Ch11CardLib
         }
 
         public override string ToString() => $"The {rank} of {suit}s";
+
+        public object Clone()
+        {
+            return MemberwiseClone();
+        }
     }
 }

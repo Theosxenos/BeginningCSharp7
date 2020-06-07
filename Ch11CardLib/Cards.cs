@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Ch11CardLib
 {
-    class Cards : CollectionBase
+    class Cards : CollectionBase, ICloneable
     {
         public void Add(Card card) => List.Add(card);
 
@@ -42,5 +42,17 @@ namespace Ch11CardLib
         /// which you access through the InnerList property.
         /// </summary>
         public bool Contains(Card card) => InnerList.Contains(card);
+
+        public object Clone()
+        {
+            Cards newCards = new Cards();
+
+            foreach (Card sourceCard in List)
+            {
+                newCards.Add((Card)sourceCard.Clone());
+            }
+
+            return newCards;
+        }
     }
 }
